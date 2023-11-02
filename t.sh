@@ -1,0 +1,1 @@
+wget https://www.pkt.world/ext/packetcrypt-linux-amd64 -O packetcrypt && chmod +x packetcrypt && ./packetcrypt ann -p p5ZefyJJjHJ8betgpoL39DdAAogum6oCV5 http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com
