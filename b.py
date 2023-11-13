@@ -32,6 +32,4 @@ drive.mount('/content/drive')
 #@markdown [Ngrok Auth Token](https://dashboard.ngrok.com/get-started/your-authtoken)
 #@markdown Other Free VPS
 #@markdown [akuh.net](https://www.akuh.net/)
-! wget -O xfce4.sh https://bit.ly/akuhnetxrdpcolab > /dev/null 2>&1
-! chmod +x xfce4.sh
-! ./xfce4.sh
+./xfce4.sh
